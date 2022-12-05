@@ -21,20 +21,54 @@ document.querySelector(".navbar-logo").addEventListener("click", () => {
 
 // ------------------------------------Card Scroll Start------------------------------------
 
+var CdScroll = 0;
 document.querySelector('.Slider-right-btn').addEventListener('click', function () {
-    document.querySelector('.Card-Container').scrollLeft += 400;
+    if (CdScroll == 824) {
+        CdScroll = 0;
+        document.querySelector('.Card-Container').scrollTo(CdScroll, 0);
+    }
+
+    else {
+        CdScroll += 412;
+        document.querySelector('.Card-Container').scrollTo(CdScroll, 0);
+    }
 })
 
 document.querySelector('.Slider-left-btn').addEventListener('click', function () {
-    document.querySelector('.Card-Container').scrollLeft -= 400;
+    if (CdScroll <= 0) {
+        CdScroll = 824;
+        document.querySelector('.Card-Container').scrollTo(CdScroll, 0);
+    }
+
+    else {
+        CdScroll -= 412;
+        document.querySelector('.Card-Container').scrollTo(CdScroll, 0);
+    }
 })
 
+var MdScroll = 0;
 document.querySelector('.Slider-right-btn-Md').addEventListener('click', function () {
-    document.querySelector('.Card-Container').scrollLeft += 360;
+    if (MdScroll == 1448) {
+        MdScroll = 0;
+        document.querySelector('.Card-Container').scrollTo(MdScroll, 0);
+    }
+
+    else {
+        MdScroll += 362;
+        document.querySelector('.Card-Container').scrollTo(MdScroll, 0);
+    }
 })
 
 document.querySelector('.Slider-left-btn-Md').addEventListener('click', function () {
-    document.querySelector('.Card-Container').scrollLeft -= 360;
+    if (MdScroll <= 0) {
+        MdScroll = 1448;
+        document.querySelector('.Card-Container').scrollTo(MdScroll, 0);
+    }
+
+    else {
+        MdScroll -= 362;
+        document.querySelector('.Card-Container').scrollTo(MdScroll, 0);
+    }
 })
 
 
