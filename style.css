@@ -300,11 +300,13 @@ span {
 }
 
 .Slider-right-btn {
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  width: 30px;
 }
 
 .Slider-left-btn {
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  width: 30px;
 }
 
 .Slider-left-btn:hover {
@@ -320,10 +322,10 @@ span {
 }
 
 .Card-Container {
+  width: 1240px;
   overflow: hidden;
   scroll-snap-type: x mandatory;
   justify-content: flex-start;
-  width: 85vw;
 }
 
 .Card {
@@ -332,7 +334,7 @@ span {
   border-radius: 1rem;
   border: 2px solid rgb(255 193 207);
   padding: 10px;
-  margin: 20px 53px;
+  margin: 20px 41px;
 
   transition: .5s smooth;
   transition-property: transform;
@@ -623,19 +625,6 @@ select:first-child {
 
 
 
-@media (min-width: 1200px) and (max-width: 1400px) {
-
-  .Card-Container {
-    width: 90vw;
-  }
-
-  .Card {
-    margin: 20px 40px;
-  }
-
-}
-
-
 @media (min-width: 200px) and (max-width: 500px) {
 
   /* ---------------------------------------------Predefined--------------------------------------------- */
@@ -661,7 +650,11 @@ select:first-child {
   }
 
   .Big-Heading {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 45px;
   }
 
   .active {
@@ -780,17 +773,17 @@ select:first-child {
     width: 100%;
   }
 
-  /* .Carousel {
-    overflow: hidden;
-  } */
+  .Carousel {
+    width: 100vw;
+  }
 
   .Card-Container {
-    width: 90vw;
+    width: 360px;
     overflow: hidden;
   }
 
   .Card {
-    margin: 20px 20px;
+    margin: 20px 19px;
   }
 
   .Card:hover {
@@ -840,7 +833,7 @@ select:first-child {
 
 
   .About-Image {
-    width: 55%;
+    width: 70%;
     padding: 0 2%;
   }
 
@@ -851,11 +844,11 @@ select:first-child {
   }
 
   .About-Name {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .About-Position {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .About-Me {
@@ -929,24 +922,4 @@ select:first-child {
     font-weight: 500;
   }
 
-}
-
-
-@media (max-width: 400px) {
-  .Card-Container {
-    width: 100vw;
-    overflow: hidden;
-  }
-
-  .Card {
-    margin: 20px 20px;
-  }
-
-  .About-Name {
-    font-size: 40px;
-  }
-
-  .About-Position {
-    font-size: 17px;
-  }
 }
